@@ -147,6 +147,19 @@ def mayor():
         return "El numero mayor es ",num2
 #print(mayor())
 #Ejercicio 16: Dada la siguiente tupla, crear una lista que sólo incluya los números menor que 5 utilizando un ciclo for
+def menor_cinco(tupla):
+    listatupla=[]
+    for x in tupla:
+        if(x<5):
+            listatupla.append(x)
+    return listatupla
+
+def recorrer(lista):
+    for x in lista:
+        print(x)
+tupla = (13, 1, 8, 3, 2, 5, 8)
+#recorrer(menor_cinco(tupla))
+
 
 #Ejercicio 17: Crear un script que encuentre la potencia de un número ingresado por el teclado
 def potencia():
@@ -172,11 +185,51 @@ def invertir_numero(num):
 def saludar():
     return "hola mundo"
 #print(saludar())
+while True:
+    op = int(input("Ingresa numero ejercicio: o 0 para salir"))
+    if (op == 0):
+        break
+    if (op == 1): 
+        print(multiplicar(3,4))
+    elif op == 2: 
+        print(invertir_cadena("Anderson Arevalo"))
+    elif op == 3: 
+        print(elemento_menor(lista))
+    elif op == 4: 
+        print (volumen_esfera(4))
+    elif op == 5: 
+        print(mayor_edad(25))
+    elif op == 6: 
+       print(par_impar(10))
+    elif op == 7: 
+        print(contar_vocales("MURcielaGO")) 
+    elif op == 8: 
+        print(inf_parar(0))
+    elif op == 9: 
+       print(calificacion(7.5))
+    elif op == 10: 
+        print(num_des(5,""))
+    elif op == 11: 
+       num_while(10)
+    elif op == 12: 
+        print(area_perimetro(12,45))
+    elif op == 13: 
+        num_div_tres(11)
+    elif op == 14: 
+       print(presentar("Cronicas de una muerte anunciada","Gabriel Garcia Marquez"))    
+    elif op == 15: 
+        print(mayor())
+    elif op == 16: 
+       recorrer(menor_cinco(tupla))
+    elif op == 17: 
+        print(potencia()) 
+    elif op == 18: 
+        print(suma(4,7))
+    elif op == 19: 
+       print(invertir_numero(12345))  
+    elif op == 20: 
+       print(saludar())  
 
-  
-        
-        
-        
 
 
         
