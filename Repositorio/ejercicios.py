@@ -194,7 +194,7 @@ while True:
         num2 = int(input("Ingrese numero 2 \n"))
         print(multiplicar(num1,num2))
     elif op == 2: 
-        cad = input("Ingrese Nombre y Apellido \n")
+        cad = "anderson es gay"
         print(invertir_cadena(cad))
     elif op == 3: 
         lista=[2,3,6,-8,1,7]
@@ -206,7 +206,7 @@ while True:
         num1 = int(input("Ingrese su edad \n"))
         print(mayor_edad(num1))
     elif op == 6: 
-        num1 = int(input("Ingrese un numero \n"))
+        num1 = int(input("Ingrese un numero \n")) 
         print(par_impar(num1))
     elif op == 7:
         pal = input("Ingrese una palabra \n")
@@ -227,7 +227,7 @@ while True:
     elif op == 13: 
         num_div_tres(11)
     elif op == 14: 
-       print(presentar("Cronicas de una muerte anunciada","Gabriel Garcia Marquez"))    
+       print(presentar("Cronicas de una muerte anunciada","Gabriel Garcia Marquez"))  
     elif op == 15: 
         print(mayor())
     elif op == 16: 
