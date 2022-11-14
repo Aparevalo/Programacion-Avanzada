@@ -186,7 +186,7 @@ def saludar():
     return "hola mundo"
 #print(saludar())
 while True:
-    op = int(input("Ingresa numero ejercicio: o 0 para salir"))
+    op = int(input("Ingresa numero ejercicio: o 0 para salir \n"))
     if (op == 0):
         break
     if (op == 1): 
