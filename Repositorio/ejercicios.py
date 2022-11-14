@@ -194,7 +194,7 @@ while True:
         num2 = int(input("Ingrese numero 2 \n"))
         print(multiplicar(num1,num2))
     elif op == 2: 
-        cad = "anderson es gay"
+        cad = input("Ingrese Nombre y Apellido \n")
         print(invertir_cadena(cad))
     elif op == 3: 
         lista=[2,3,6,-8,1,7]
