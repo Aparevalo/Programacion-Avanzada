@@ -27,7 +27,7 @@ def elemento_menor(lista):
         if (lista[x]<menor):
             menor=lista[x]
     return(menor)
-lista=[2,3,6,-8,1,7]
+
 #print(elemento_menor(lista))
 
 #Ejercicio 4: Crear un script que imprima el volumen de una esfera por su radio
@@ -190,29 +190,40 @@ while True:
     if (op == 0):
         break
     if (op == 1): 
-        print(multiplicar(3,4))
+        num1 = int(input("Ingrese numero 1 \n"))
+        num2 = int(input("Ingrese numero 2 \n"))
+        print(multiplicar(num1,num2))
     elif op == 2: 
-        print(invertir_cadena("Anderson Arevalo"))
+        cad = input("Ingrese Nombre y Apellido \n")
+        print(invertir_cadena(cad))
     elif op == 3: 
+        lista=[2,3,6,-8,1,7]
         print(elemento_menor(lista))
     elif op == 4: 
-        print (volumen_esfera(4))
+        num1 = int(input("Ingrese Radio de la esfera \n"))
+        print (volumen_esfera(num1))
     elif op == 5: 
-        print(mayor_edad(25))
+        num1 = int(input("Ingrese su edad \n"))
+        print(mayor_edad(num1))
     elif op == 6: 
-       print(par_impar(10))
-    elif op == 7: 
-        print(contar_vocales("MURcielaGO")) 
+        num1 = int(input("Ingrese un numero \n"))
+        print(par_impar(num1))
+    elif op == 7:
+        pal = input("Ingrese una palabra \n")
+        print(contar_vocales(pal)) 
     elif op == 8: 
         print(inf_parar(0))
     elif op == 9: 
-       print(calificacion(7.5))
+        num1 = float(input("Ingrese numero 1 \n"))
+        print(calificacion(7.5))
     elif op == 10: 
         print(num_des(5,""))
     elif op == 11: 
        num_while(10)
     elif op == 12: 
-        print(area_perimetro(12,45))
+        num1 = int(input("Ingrese Alto \n"))
+        num2 = int(input("Ingrese Ancho 1 \n"))
+        print(area_perimetro(num1,num2))
     elif op == 13: 
         num_div_tres(11)
     elif op == 14: 
@@ -223,12 +234,15 @@ while True:
        recorrer(menor_cinco(tupla))
     elif op == 17: 
         print(potencia()) 
-    elif op == 18: 
-        print(suma(4,7))
-    elif op == 19: 
-       print(invertir_numero(12345))  
+    elif op == 18:
+        num1 = int(input("Ingrese numero 1 \n"))
+        num2 = int(input("Ingrese numero 2 \n")) 
+        print(suma(num1,num2))
+    elif op == 19:
+        num1 = input("Ingrese numero \n")
+        print(invertir_numero(num1))  
     elif op == 20: 
-       print(saludar())  
+        print(saludar())  
 
 
 
