@@ -93,6 +93,14 @@ def mensaje():
 #Ejercicio 7: Define una función que permita imprimir un mensaje en base a los valores
 #tomados de una lista para comprobar si todos los de la lista son mayores o menores de edad.
 
+def mayoredad(lista):
+    for x in lista:
+        if(x>=18):
+            print(x," es mayor de edad")
+        else:
+            print(x," es menor de edad")
+
+#mayoredad([18,24,13,5,45])
 
 #Ejercicio 8: Define una función que permita multiplicar los números de una lista y sumar sus resultados.
 def multiplicar(lista,sum,cont,rango):
@@ -112,4 +120,38 @@ def extension(cadena):
     cad=cadena.split('.')
     return "La extension de: "+cad[0]+" es: "+cad[len(cad)-1]
 
-print(extension(input("Ingrese nombre del archivo y su extension ")))
+#print(extension(input("Ingrese nombre del archivo y su extension ")))
+
+
+while True:
+    op = int(input("Ingresa numero ejercicio: o 0 para salir \n"))
+    if (op == 0):
+        break
+    elif (op == 1): 
+        num1 = int(input("Ingrese numero 1 \n"))
+        num2 = int(input("Ingrese numero 2 \n"))
+        print(menorque(num1,num2))
+    elif op == 2: 
+        lista=[]
+        print(num_max(agregar_lista(lista,4)))
+    elif op==3:
+        lista=[]
+        print(num_max_min(agregar_lista(lista,3)))
+    elif op==4:
+        lista=[]
+        print(num_max_min_ig(agregar_lista(lista,3)))
+    elif op==5:
+        print(mayuscula_minuscula(input("Ingrese una vocal \n")))
+    elif op==6:
+        mensaje()
+    elif op==7:
+        lista=[]
+        num1 = int(input("Ingrese cantidad de numeros a ingresar \n"))
+        mayoredad(agregar_lista(lista,num1))
+    elif op==8:
+        lista=[]
+        num1 = int(input("Ingrese cantidad de numeros a ingresar \n"))
+        print(multiplicar(agregar_lista(lista,num1),1,0,num1)) 
+    elif op==9:
+        print(extension(input("Ingrese nombre del archivo y su extension ")))
+
