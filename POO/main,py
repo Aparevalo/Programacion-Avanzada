@@ -1,0 +1,38 @@
+import turtle
+from matplotlib import pyplot as plt
+from coordenadas import punto 
+from rectangulo import rectangulo 
+
+while True:
+    op=int(input("1:Ejercicios Clase Punto \n 2:Ejercicios Clase Rectangulo \n 0:Salir"))
+    if(op==0):
+        break
+    elif op==1:
+        while True:
+            op=int(input("1:Crea los puntos A(2,3), B(5,5), C(-3,-1) y D(0,0) e imprime por pantalla. \n 2:Consulta a que cuadrante pertenece el punto A, C y D. 3:\n Consulta los vectores AB y BA.\n 0:Salir"))
+            if(op==0):
+                break
+            elif op==1:
+                puntoA= punto(2,3)
+                puntoA.imprimir()
+                puntoB= punto(5,5)
+                puntoB.imprimir()
+                puntoC= punto(-3,-1)
+                puntoC.imprimir()
+                puntoD= punto(0,0)
+                puntoD.imprimir()
+
+            elif op==2:
+                puntoA.cuadrante()
+                puntoC.cuadrante()
+                puntoD.cuadrante()
+            
+            elif op==3:
+                puntoA.vector(puntoB.x,puntoB.y)
+                puntoB.vector(puntoA.x,puntoA.y)
+                plt.ylim(0,10)
+                plt.xlim(0,10)
+                plt.show()
+                        
+
+        

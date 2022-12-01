@@ -1,16 +1,9 @@
-import turtle
+from matplotlib import pyplot as plt
 
-def dibujar_puntos(l,w):  
-    t = turtle.Turtle()
-    t.forward(l*10) 
-    t.left(90) 
-    t.forward(w*10) 
-    t.left(90) 
-    t.forward(l*10) 
-    t.left(90) 
-    t.forward(w*10) 
-    t.left(90)
-    return t
+def plot(x, y,x1,y1):
+    ax = plt.axes()
+    ax.arrow(x,y, x1,y1 , head_width=0.5, head_length=0.5)    
+    return ax
 
 class punto:
   
@@ -21,33 +14,20 @@ class punto:
     def cuadrante(self):
         if(self.x>=0 and self.y>=0):
             print("Cuadrante 1")
-        elif (self.x<0 and y>=0):
+        elif (self.x<0 and self.y>=0):
             print("Cuadrante 2")
-        elif self.x<0 and y<0:
+        elif self.x<0 and self.y<0:
             print("Cuadrante 3")
         else:
             print("Cuadrante 4")
 
-    def dibujar(self,x1,y1):
-       
-            px=(x1-self.x)
-            py=(y1-self.y)
-            dibujar_puntos(px,py)
-
-       
-
+    def imprimir(self):
+        print("X=",self.x,"Y=",self.y) 
 
     def vector(self,x1,y1):
-        px=(x1-self.x)
-        py=(y1-self.y)
-        print("x =",px,"y =",py)
+        return plot(self.x,self.y,x1,y1)
 
 
-puntoA= punto(2,3)
-puntoA.cuadrante()
-puntoA.vector(7,8)
-puntoA.dibujar(3,7)
-turtle.mainloop()
 
 
 
