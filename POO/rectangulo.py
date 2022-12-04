@@ -17,15 +17,22 @@ class rectangulo(puntoC):
 
     x=0
     y=0
-
+    
     def dibujar(self,x1,y1):
             px=(x1-self.x)
             py=(y1-self.y)
             dibujar_puntos(px,py)
 
-    def calculo(self,x1,y1):
-         #Consulta la base, altura y área del rectángulo.
+    def base(self,x1,y1):
+        base=y1-self.y
+        print("Base: "+str(base))
+
+    def altura(self,x1,y1):
+        altura=x1-self.x
+        print("Altura: "+str(altura))
+
+    def area(self,x1,y1):
         base=y1-self.y
         altura=x1-self.x
         area=base*altura
-        print("Base: "+str(base)+" Altura: "+str(altura)+" Area: "+str(area))
+        print("Area: "+str(area))

@@ -54,7 +54,9 @@ while True:
                 puntoA1.dibujar(puntoB1.x,puntoB1.y)
                 turtle.mainloop()
             elif op==2:
-                puntoA1.calculo(puntoB1.x,puntoB1.y)
+                puntoA1.base(puntoB1.x,puntoB1.y)
+                puntoA1.altura(puntoB1.x,puntoB1.y)
+                puntoA1.area(puntoB1.x,puntoB1.y)
 
 
 
