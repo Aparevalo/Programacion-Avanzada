@@ -1,4 +1,4 @@
-from punto import visualizar
+from puntoc import puntoC
 from matplotlib import pyplot as plt
 
 

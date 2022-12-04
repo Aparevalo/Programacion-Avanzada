@@ -4,12 +4,12 @@ from coordenadas import punto
 from rectangulo import rectangulo 
 
 while True:
-    op=int(input("1:Ejercicios Clase Punto\n2:Ejercicios Clase Rectangulo\n0:Salir"))
+    op=int(input("1:Ejercicios Clase Punto\n2:Ejercicios Clase Rectangulo\n0:Salir\n"))
     if(op==0):
         break
     elif op==1:
         while True:
-            op=int(input("1:Crea los puntos A(2,3), B(5,5), C(-3,-1) y D(0,0) e imprime por pantalla.\n2:Consulta a que cuadrante pertenece el punto A, C y D.\n3:Consulta los vectores AB y BA.\n0:Salir"))
+            op=int(input("1:Crea los puntos A(2,3), B(5,5), C(-3,-1) y D(0,0) e imprime por pantalla.\n2:Consulta a que cuadrante pertenece el punto A, C y D.\n3:Consulta los vectores AB y BA.\n0:Salir\n"))
             if(op==0):
                 break
             elif op==1:
@@ -28,15 +28,24 @@ while True:
                 puntoD.cuadrante()
             
             elif op==3:
-                puntoA.vector(puntoB.x,puntoB.y)
-                puntoB.vector(puntoA.x,puntoA.y)
-                plt.ylim(0,10)
-                plt.xlim(0,10)
-                plt.show()
+                 while True:
+                    op=int(input("1:Consulta el vector AB.\n2:Consulta el vector BA.\n0:Salir\n"))
+                    if(op==0):
+                        break
+                    elif op==1:
+                        puntoA.vector(puntoB.x,puntoB.y)
+                        plt.ylim(0,10)
+                        plt.xlim(0,10)
+                        plt.show()
+                    elif op==2:
+                        puntoB.vector(puntoA.x,puntoA.y)
+                        plt.ylim(0,10)
+                        plt.xlim(0,10)
+                        plt.show()
     
     elif op==2:
         while True:
-            op=int(input("1: Crea un rectángulo utilizando los puntos A y B.\n2:Consulta la base, altura y área del rectángulo.\n0:Salir"))
+            op=int(input("1: Crea un rectángulo utilizando los puntos A y B.\n2:Consulta la base, altura y área del rectángulo.\n0:Salir\n"))
             if(op==0):
                 break
             elif op==1:

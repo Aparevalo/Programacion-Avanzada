@@ -1,5 +1,5 @@
 import turtle
-from punto import visualizar
+from puntoc import puntoC
 
 def dibujar_puntos(l,w):  
     t = turtle.Turtle()
