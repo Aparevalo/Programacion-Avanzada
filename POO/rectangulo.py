@@ -10,12 +10,13 @@ def dibujar_puntos(l,w):
     t.forward(w*20) 
     t.left(90)
     return t
-class rectangulo:
 
+class rectangulo:
+    
     x=0
     y=0
 
-    def ing(self,x,y):
+    def  __init__(self, x, y):
         self.x=x
         self.y=y
 
@@ -24,3 +25,9 @@ class rectangulo:
             py=(y1-self.y)
             dibujar_puntos(px,py)
 
+    def calculo(self,x1,y1):
+         #Consulta la base, altura y área del rectángulo.
+        base=y1-self.y
+        altura=x1-self.x
+        area=base*altura
+        print("Base: "+str(base)+" Altura: "+str(altura)+" Area: "+str(area))
