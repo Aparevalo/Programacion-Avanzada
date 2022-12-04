@@ -14,13 +14,13 @@ while True:
                 break
             elif op==1:
                 puntoA= punto(2,3)
-                puntoA.imprimir()
+                puntoA.visualizar()
                 puntoB= punto(5,5)
-                puntoB.imprimir()
+                puntoB.visualizar()
                 puntoC= punto(-3,-1)
-                puntoC.imprimir()
+                puntoC.visualizar()
                 puntoD= punto(0,0)
-                puntoD.imprimir()
+                puntoD.visualizar()
 
             elif op==2:
                 puntoA.cuadrante()

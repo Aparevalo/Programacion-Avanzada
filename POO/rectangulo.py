@@ -1,4 +1,6 @@
 import turtle
+from punto import visualizar
+
 def dibujar_puntos(l,w):  
     t = turtle.Turtle()
     t.forward(l*20) 
@@ -11,14 +13,10 @@ def dibujar_puntos(l,w):
     t.left(90)
     return t
 
-class rectangulo:
-    
+class rectangulo(puntoC):
+
     x=0
     y=0
-
-    def  __init__(self, x, y):
-        self.x=x
-        self.y=y
 
     def dibujar(self,x1,y1):
             px=(x1-self.x)
